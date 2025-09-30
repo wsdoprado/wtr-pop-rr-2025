@@ -9,6 +9,9 @@ dependencies = [
     "netmiko>=4.6.0",
     "nornir>=3.5.0",
     "nornir-netbox>=0.3.0",
+    "pyeapi>=1.0.4",
+    "pynetbox>=7.5.0",
+    "python-dotenv>=1.1.1",
     "requests>=2.32.5",
     "scrapli>=2025.1.30",
 ]
