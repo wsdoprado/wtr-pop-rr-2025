@@ -122,12 +122,12 @@ docker import cEOS-lab-4.34.2F.tar.xz ceos:4.34.2F
 # Criando o laboratório do curso
 Suba o laboratório de exemplo:
 ```bash
-containerlab deploy -t lab-semanacap.yml
+containerlab deploy -t wtr.yml
 ```
 
 Destrua um laboratório específico:
 ```bash
-containerlab destroy -t lab-semanacap.yml --cleanup
+containerlab destroy -t wtr.yml --cleanup
 ```
 
 Liste e inspecione laboratórios ativos:
