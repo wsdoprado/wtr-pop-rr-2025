@@ -1,0 +1,41 @@
+name: wtr
+
+mgmt:
+  network: mgmt
+  ipv4-subnet: 192.168.100.0/24
+  ipv6-subnet: 2001:db8:100::/64
+
+topology:
+  kinds:
+    ceos:
+      image: ceos:4.34.2F
+      
+  nodes:
+    spine-01:
+      kind: ceos
+      mgmt-ipv4: 192.168.100.101
+      mgmt-ipv6: 2001:db8:100::101
+    spine-02:
+      kind: ceos
+      mgmt-ipv4: 192.168.100.102
+      mgmt-ipv6: 2001:db8:100::102
+    leaf-01:
+      kind: ceos
+      mgmt-ipv4: 192.168.100.103
+      mgmt-ipv6: 2001:db8:100::103
+    leaf-02:
+      kind: ceos
+      mgmt-ipv4: 192.168.100.104
+      mgmt-ipv6: 2001:db8:100::104
+    leaf-03:
+      kind: ceos
+      mgmt-ipv4: 192.168.100.105
+      mgmt-ipv6: 2001:db8:100::105
+
+  links:
+    - endpoints: ["spine-01:eth1", "leaf-01:eth1"]
+    - endpoints: ["spine-01:eth2", "leaf-02:eth1"]
+    - endpoints: ["spine-01:eth3", "leaf-03:eth1"]
+    - endpoints: ["spine-02:eth1", "leaf-01:eth2"]
+    - endpoints: ["spine-02:eth2", "leaf-02:eth2"]
+    - endpoints: ["spine-02:eth3", "leaf-03:eth2"]
