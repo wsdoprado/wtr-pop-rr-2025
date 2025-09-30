@@ -1,4 +1,4 @@
-cd /opt/wtr-pop-rr
+cd /opt/wtr-pop-rr-2025/
 
 apt install sudo -y
 

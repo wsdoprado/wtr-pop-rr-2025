@@ -1,0 +1,14 @@
+[project]
+name = "wtr-pop-rr-2025"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "napalm>=5.1.0",
+    "netmiko>=4.6.0",
+    "nornir>=3.5.0",
+    "nornir-netbox>=0.3.0",
+    "requests>=2.32.5",
+    "scrapli>=2025.1.30",
+]
