@@ -834,6 +834,19 @@ wheels = [
 ]
 
 [[package]]
+name = "scrapli-netconf"
+version = "2025.1.30"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "lxml" },
+    { name = "scrapli" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/71/7a/11f5881ae1aa8fe3f102d3c6e6a16e4b3db7c2b9c9558422227f9a2131d4/scrapli_netconf-2025.1.30.tar.gz", hash = "sha256:06813455dda9bd27d99734a3f689b4259ccab625141fc41126495ccad705d248", size = 30362, upload-time = "2025-01-31T00:50:02.72Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e7/a9/3d722619901cca8ba5cbe0a66ed024292d17e155da3b26260abe227fcbe3/scrapli_netconf-2025.1.30-py3-none-any.whl", hash = "sha256:009041515d9d75d6e3748730bc920b350eb6ab86c6890e44495ca00de3e86cd9", size = 37133, upload-time = "2025-01-31T00:50:01.042Z" },
+]
+
+[[package]]
 name = "setuptools"
 version = "80.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -925,6 +938,8 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "requests" },
     { name = "scrapli" },
+    { name = "scrapli-netconf" },
+    { name = "xmltodict" },
 ]
 
 [package.metadata]
@@ -937,7 +952,18 @@ requires-dist = [
     { name = "pynetbox", specifier = ">=7.5.0" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "requests", specifier = ">=2.32.5" },
-    { name = "scrapli", specifier = ">=2025.1.30" },
+    { name = "scrapli", extras = ["https"], specifier = ">=2025.1.30" },
+    { name = "scrapli-netconf", specifier = ">=2025.1.30" },
+    { name = "xmltodict", specifier = ">=1.0.2" },
+]
+
+[[package]]
+name = "xmltodict"
+version = "1.0.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6a/aa/917ceeed4dbb80d2f04dbd0c784b7ee7bba8ae5a54837ef0e5e062cd3cfb/xmltodict-1.0.2.tar.gz", hash = "sha256:54306780b7c2175a3967cad1db92f218207e5bc1aba697d887807c0fb68b7649", size = 25725, upload-time = "2025-09-17T21:59:26.459Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c0/20/69a0e6058bc5ea74892d089d64dfc3a62ba78917ec5e2cfa70f7c92ba3a5/xmltodict-1.0.2-py3-none-any.whl", hash = "sha256:62d0fddb0dcbc9f642745d8bbf4d81fd17d6dfaec5a15b5c1876300aad92af0d", size = 13893, upload-time = "2025-09-17T21:59:24.859Z" },
 ]
 
 [[package]]
