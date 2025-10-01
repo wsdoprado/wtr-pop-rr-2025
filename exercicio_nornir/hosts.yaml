@@ -1,0 +1,10 @@
+r1:
+  hostname: 2001:db8:100::101
+  username: admin
+  password: admin
+  platform: eos
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          transport: https   # ou "https" dependendo da config do EOS

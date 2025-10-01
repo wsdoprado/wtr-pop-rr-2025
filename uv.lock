@@ -182,6 +182,15 @@ wheels = [
 ]
 
 [[package]]
+name = "colorama"
+version = "0.4.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44", size = 27697, upload-time = "2022-10-25T02:36:22.414Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6", size = 25335, upload-time = "2022-10-25T02:36:20.889Z" },
+]
+
+[[package]]
 name = "cryptography"
 version = "46.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -542,6 +551,19 @@ wheels = [
 ]
 
 [[package]]
+name = "nornir-napalm"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "napalm" },
+    { name = "nornir" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d3/84/2f8a21579d23fcef92f217b72b828c7af6d3004791c5286696f267e715e7/nornir_napalm-0.5.0.tar.gz", hash = "sha256:4c95979eebe2475e7b8516411ad8e3205d2ff30e410d1dbdce785a55033d1130", size = 7908, upload-time = "2024-04-13T04:16:40.13Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bf/16/fb7f72cb75adf051ff0049b613c1a2db557772323a70d594b6195549d572/nornir_napalm-0.5.0-py3-none-any.whl", hash = "sha256:1a418bf0f5e38ac65894d474f81b50787dafe0aa1965c4fbd1b86d34d4374418", size = 11971, upload-time = "2024-04-13T04:16:38.621Z" },
+]
+
+[[package]]
 name = "nornir-netbox"
 version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -552,6 +574,44 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/1c/b9/54c305962bfc60143b3fc746111de5a90482866df2c4e62567cc4e89f6b1/nornir_netbox-0.3.0.tar.gz", hash = "sha256:bd94ab1aa1f11671a7891b7913c5c44446fb1722de3e755e0440fadc0c7a7a36", size = 8577, upload-time = "2021-09-20T20:03:49.872Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d2/9c/085903ac1b3056ee3d6986a9a29d3c1e410b9f774686e4ec525f2497afcb/nornir_netbox-0.3.0-py3-none-any.whl", hash = "sha256:b95c46c01da72db9ade1bab7e8268e73d8c4946a635f93deda8369fbe6fdc142", size = 9436, upload-time = "2021-09-20T20:03:48.708Z" },
+]
+
+[[package]]
+name = "nornir-netmiko"
+version = "1.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "netmiko" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/94/00/ddd0b87d3493f7c853798d86f3b37fbb7decc4b5b30bd473e0f4565bc96d/nornir_netmiko-1.0.1.tar.gz", hash = "sha256:498546df001e0e499f10c5646d1356e361ccbb165b1335b89cfe8f19765e24d7", size = 7838, upload-time = "2023-12-07T18:18:34.364Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/13/16/63764c64087f14b2cd66f205da8570dfc13887ec43aa668de0c55a3ff92b/nornir_netmiko-1.0.1-py3-none-any.whl", hash = "sha256:eaee2944ad386b40c0719e8ac393ac63d531f44fb9a07d660bae7de430f12834", size = 11518, upload-time = "2023-12-07T18:18:33.369Z" },
+]
+
+[[package]]
+name = "nornir-rich"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "nornir" },
+    { name = "rich" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cd/3f/988a534d7893d29d53e935c8407d080509889bcf061a5f3911077cc25cce/nornir_rich-0.2.0.tar.gz", hash = "sha256:28835cb4fbbda36596661bbf07bfa58cc6f6fc27cff022c583ec593563d56224", size = 4852, upload-time = "2024-08-24T09:24:37.572Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f6/41/343c6e5c59921d14f656ca5aca5c700dcd7ab40e4b9c9cf24f8aa349adfd/nornir_rich-0.2.0-py3-none-any.whl", hash = "sha256:19c48ec3c8ea0cb47c84a1bcb65a4a380f814265cbaec809dfd064c220e68b07", size = 5656, upload-time = "2024-08-24T09:24:36.427Z" },
+]
+
+[[package]]
+name = "nornir-utils"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama" },
+    { name = "nornir" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/46/fa/4e96cf440083973ea32bd95779fbed33e7d84015f898e4aef22f6a3bcb1b/nornir_utils-0.2.0.tar.gz", hash = "sha256:4de6aaa35e5c1a98e1c84db84a008b0b1e974dc65d88484f2dcea3e30c95fbc2", size = 10361, upload-time = "2022-04-09T09:32:46.274Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5d/14/89c3097801544249052c6a89ad5a9a65035ccddb3aae1948854545ea8f2e/nornir_utils-0.2.0-py3-none-any.whl", hash = "sha256:b4c430793a74f03affd5ff2d90abc8c67a28c7ff325f48e3a01a9a44ec71b844", size = 15157, upload-time = "2022-04-09T09:32:44.717Z" },
 ]
 
 [[package]]
@@ -757,15 +817,15 @@ wheels = [
 
 [[package]]
 name = "rich"
-version = "14.1.0"
+version = "13.9.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown-it-py" },
     { name = "pygments" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fe/75/af448d8e52bf1d8fa6a9d089ca6c07ff4453d86c65c145d0a300bb073b9b/rich-14.1.0.tar.gz", hash = "sha256:e497a48b844b0320d45007cdebfeaeed8db2a4f4bcf49f15e455cfc4af11eaa8", size = 224441, upload-time = "2025-07-25T07:32:58.125Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ab/3a/0316b28d0761c6734d6bc14e770d85506c986c85ffb239e688eeaab2c2bc/rich-13.9.4.tar.gz", hash = "sha256:439594978a49a09530cff7ebc4b5c7103ef57baf48d5ea3184f21d9a2befa098", size = 223149, upload-time = "2024-11-01T16:43:57.873Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e3/30/3c4d035596d3cf444529e0b2953ad0466f6049528a879d27534700580395/rich-14.1.0-py3-none-any.whl", hash = "sha256:536f5f1785986d6dbdea3c75205c473f970777b4a0d6c6dd1b696aa05a3fa04f", size = 243368, upload-time = "2025-07-25T07:32:56.73Z" },
+    { url = "https://files.pythonhosted.org/packages/19/71/39c7c0d87f8d4e6c020a393182060eaefeeae6c01dab6a84ec346f2567df/rich-13.9.4-py3-none-any.whl", hash = "sha256:6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90", size = 242424, upload-time = "2024-11-01T16:43:55.817Z" },
 ]
 
 [[package]]
@@ -932,7 +992,11 @@ dependencies = [
     { name = "napalm" },
     { name = "netmiko" },
     { name = "nornir" },
+    { name = "nornir-napalm" },
     { name = "nornir-netbox" },
+    { name = "nornir-netmiko" },
+    { name = "nornir-rich" },
+    { name = "nornir-utils" },
     { name = "pyeapi" },
     { name = "pynetbox" },
     { name = "python-dotenv" },
@@ -947,7 +1011,11 @@ requires-dist = [
     { name = "napalm", specifier = ">=5.1.0" },
     { name = "netmiko", specifier = ">=4.6.0" },
     { name = "nornir", specifier = ">=3.5.0" },
+    { name = "nornir-napalm", specifier = ">=0.5.0" },
     { name = "nornir-netbox", specifier = ">=0.3.0" },
+    { name = "nornir-netmiko", specifier = ">=1.0.1" },
+    { name = "nornir-rich", specifier = ">=0.2.0" },
+    { name = "nornir-utils", specifier = ">=0.2.0" },
     { name = "pyeapi", specifier = ">=1.0.4" },
     { name = "pynetbox", specifier = ">=7.5.0" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
