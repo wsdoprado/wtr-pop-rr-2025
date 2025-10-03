@@ -25,7 +25,7 @@ Este repositório contém os arquivos e instruções para o laboratório do curs
 
 Antes de começar, certifique-se de que o sistema possui:
 
-- **Linux (Debian 12.10.0 netinst instalação limpa) - 1 host [16G RAM(ou mais), 50G Disco, 8vcpu (ou mais)]**
+- **Linux (Debian 12.10.0 netinst instalação limpa) - 1 host [16G RAM(ou mais), 50G Disco, 8vcpu (ou mais)]** https://drive.google.com/file/d/14A_xpEiPQka0bGYG-7IHVqxnipWEXinb/view?usp=drive_link
 - Acesso a Internet para download de arquivos
 - IDE para visualizar arquivos .py, compose.yml, Dockerfile. (VS Code, Pycharm)
   
