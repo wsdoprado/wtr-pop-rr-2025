@@ -278,7 +278,7 @@ wheels = [
 
 [[package]]
 name = "junos-eznc"
-version = "2.7.5"
+version = "2.7.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jinja2" },
@@ -293,9 +293,9 @@ dependencies = [
     { name = "transitions" },
     { name = "yamlordereddictloader" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bc/a0/54c0ca84bca6233aa25ab01f57117c8fbe1498a05bf85842f1a6c99eb3bf/junos_eznc-2.7.5.tar.gz", hash = "sha256:d7e395669eb94aeed9bca47a157ac87fa2e5489c075225b0878d0e5b77cd00c3", size = 176970, upload-time = "2025-09-23T15:03:26.08Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4e/fb/8636537d3832ab752501296ac8a85b2d0b13da169ca95024584434d77836/junos-eznc-2.7.4.tar.gz", hash = "sha256:c9d90f8ecea908b0b8bf3f47ccc4c7afc212dddcd275a426e5c0104f40418d59", size = 176800, upload-time = "2025-04-30T16:28:37.564Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/46/3c/36a0a265c920e478cec88faab97169cbc39d5d67822fcbd63eed052112cf/junos_eznc-2.7.5-py2.py3-none-any.whl", hash = "sha256:db94074c50227c217a7669b9efad372d11bb354de4985cffcc7295aa2af80919", size = 206884, upload-time = "2025-09-23T15:03:23.637Z" },
+    { url = "https://files.pythonhosted.org/packages/14/4a/1b1748f154810264114e94cb919c92e805645b416ea7f78aa4c4919f6250/junos_eznc-2.7.4-py2.py3-none-any.whl", hash = "sha256:9067f4868c6a0f884288a3f1d23e0aea50c7292760a0f8455a1809658c763dc3", size = 206848, upload-time = "2025-04-30T16:28:35.772Z" },
 ]
 
 [[package]]
@@ -492,13 +492,15 @@ wheels = [
 
 [[package]]
 name = "ncclient"
-version = "0.7.0"
+version = "0.6.15"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "lxml" },
     { name = "paramiko" },
+    { name = "setuptools" },
+    { name = "six" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c2/fb/29dbb4987f81d7932d8018079bf3e6d1d5cce320d7c2c90e84d3c7dba40c/ncclient-0.7.0.tar.gz", hash = "sha256:318e8e3e72b1d2a766f3665cabef33436fd25b607da5f15657a199c648a68435", size = 116221, upload-time = "2025-08-25T15:29:24.172Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6d/db/887f9002c3e6c8b838ec7027f9d8ac36337f44bcd146c922e3deee60e55e/ncclient-0.6.15.tar.gz", hash = "sha256:6757cb41bc9160dfe47f22f5de8cf2f1adf22f27463fb50453cc415ab96773d8", size = 634885, upload-time = "2023-10-17T21:36:51.563Z" }
 
 [[package]]
 name = "netaddr"
@@ -574,6 +576,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/1c/b9/54c305962bfc60143b3fc746111de5a90482866df2c4e62567cc4e89f6b1/nornir_netbox-0.3.0.tar.gz", hash = "sha256:bd94ab1aa1f11671a7891b7913c5c44446fb1722de3e755e0440fadc0c7a7a36", size = 8577, upload-time = "2021-09-20T20:03:49.872Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d2/9c/085903ac1b3056ee3d6986a9a29d3c1e410b9f774686e4ec525f2497afcb/nornir_netbox-0.3.0-py3-none-any.whl", hash = "sha256:b95c46c01da72db9ade1bab7e8268e73d8c4946a635f93deda8369fbe6fdc142", size = 9436, upload-time = "2021-09-20T20:03:48.708Z" },
+]
+
+[[package]]
+name = "nornir-netconf"
+version = "2.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ncclient" },
+    { name = "nornir" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b2/93/de1086b2b4f4dd7761dc1651bbbb41ca3108b6be30cbbbf8782fd91a3f66/nornir_netconf-2.1.0.tar.gz", hash = "sha256:218770afe2f5520a4dc740d1b4d6e53b4567b2af3c00657789ba3fb0dcd5ba1b", size = 18748, upload-time = "2024-10-13T17:28:55.278Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/53/1d/e30061aa4100e18c54c8d0b8120977cdfd44dafcbee4e6c3468e7d1273bf/nornir_netconf-2.1.0-py3-none-any.whl", hash = "sha256:671068cfbc2a7ce6b7ebf6c8b6602befc7ebaf9bc6ac450783c23845eb807e62", size = 21760, upload-time = "2024-10-13T17:28:52.803Z" },
 ]
 
 [[package]]
@@ -994,6 +1009,7 @@ dependencies = [
     { name = "nornir" },
     { name = "nornir-napalm" },
     { name = "nornir-netbox" },
+    { name = "nornir-netconf" },
     { name = "nornir-netmiko" },
     { name = "nornir-rich" },
     { name = "nornir-utils" },
@@ -1013,6 +1029,7 @@ requires-dist = [
     { name = "nornir", specifier = ">=3.5.0" },
     { name = "nornir-napalm", specifier = ">=0.5.0" },
     { name = "nornir-netbox", specifier = ">=0.3.0" },
+    { name = "nornir-netconf", specifier = ">=2.1.0" },
     { name = "nornir-netmiko", specifier = ">=1.0.1" },
     { name = "nornir-rich", specifier = ">=0.2.0" },
     { name = "nornir-utils", specifier = ">=0.2.0" },
