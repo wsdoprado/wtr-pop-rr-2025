@@ -1,8 +1,3 @@
-"""
-Exercício 26 - 
-
-"""
-
 import os
 from nornir import InitNornir
 from dotenv import load_dotenv

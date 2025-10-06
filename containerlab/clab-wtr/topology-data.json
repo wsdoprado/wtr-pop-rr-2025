@@ -1,0 +1,262 @@
+{
+  "name": "wtr",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "mgmt",
+        "bridge": "br-4851a4ea0e33",
+        "ipv4-subnet": "192.168.100.0/24",
+        "ipv4-gw": "192.168.100.1",
+        "ipv6-subnet": "2001:db8:100::/64",
+        "ipv6-gw": "2001:db8:100::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "leaf-01": {
+      "index": "0",
+      "shortname": "leaf-01",
+      "longname": "clab-wtr-leaf-01",
+      "fqdn": "leaf-01.wtr.io",
+      "group": "",
+      "labdir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/leaf-01",
+      "kind": "ceos",
+      "image": "ceos:4.34.2F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.100.103",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:100::103",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:8b:38:dc",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4851a4ea0e33",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/leaf-01",
+        "clab-node-longname": "clab-wtr-leaf-01",
+        "clab-node-name": "leaf-01",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/opt/wtr-pop-rr-2025/containerlab/wtr.yml",
+        "containerlab": "wtr"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf-02": {
+      "index": "1",
+      "shortname": "leaf-02",
+      "longname": "clab-wtr-leaf-02",
+      "fqdn": "leaf-02.wtr.io",
+      "group": "",
+      "labdir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/leaf-02",
+      "kind": "ceos",
+      "image": "ceos:4.34.2F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.100.104",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:100::104",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:52:fc:37",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4851a4ea0e33",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/leaf-02",
+        "clab-node-longname": "clab-wtr-leaf-02",
+        "clab-node-name": "leaf-02",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/opt/wtr-pop-rr-2025/containerlab/wtr.yml",
+        "containerlab": "wtr"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf-03": {
+      "index": "2",
+      "shortname": "leaf-03",
+      "longname": "clab-wtr-leaf-03",
+      "fqdn": "leaf-03.wtr.io",
+      "group": "",
+      "labdir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/leaf-03",
+      "kind": "ceos",
+      "image": "ceos:4.34.2F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.100.105",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:100::105",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:7d:9e:d0",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4851a4ea0e33",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/leaf-03",
+        "clab-node-longname": "clab-wtr-leaf-03",
+        "clab-node-name": "leaf-03",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/opt/wtr-pop-rr-2025/containerlab/wtr.yml",
+        "containerlab": "wtr"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine-01": {
+      "index": "3",
+      "shortname": "spine-01",
+      "longname": "clab-wtr-spine-01",
+      "fqdn": "spine-01.wtr.io",
+      "group": "",
+      "labdir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/spine-01",
+      "kind": "ceos",
+      "image": "ceos:4.34.2F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.100.101",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:100::101",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:52:4b:d2",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4851a4ea0e33",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/spine-01",
+        "clab-node-longname": "clab-wtr-spine-01",
+        "clab-node-name": "spine-01",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/opt/wtr-pop-rr-2025/containerlab/wtr.yml",
+        "containerlab": "wtr"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine-02": {
+      "index": "4",
+      "shortname": "spine-02",
+      "longname": "clab-wtr-spine-02",
+      "fqdn": "spine-02.wtr.io",
+      "group": "",
+      "labdir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/spine-02",
+      "kind": "ceos",
+      "image": "ceos:4.34.2F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "192.168.100.102",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:db8:100::102",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:7f:57:41",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-4851a4ea0e33",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/opt/wtr-pop-rr-2025/containerlab/clab-wtr/spine-02",
+        "clab-node-longname": "clab-wtr-spine-02",
+        "clab-node-name": "spine-02",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/opt/wtr-pop-rr-2025/containerlab/wtr.yml",
+        "containerlab": "wtr"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "spine-01",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:e4:ac:86",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf-01",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:f5:ff:ae",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spine-01",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:b6:5e:b2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf-02",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:2f:bf:a7",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spine-01",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:ff:d3:ea",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf-03",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:a4:87:7e",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spine-02",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:14:14:52",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf-01",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:7a:fb:3a",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spine-02",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:1f:d2:be",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf-02",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:a6:1f:6b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spine-02",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:06:1e:c2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf-03",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:c7:a7:46",
+        "peer": "a"
+      }
+    }
+  ]
+}

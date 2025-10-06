@@ -1,8 +1,3 @@
-"""
-Exercício 30 - 
-
-"""
-
 from load_environment import load_environment
 from nornir_setup import init_nornir
 from nornir_utils.plugins.functions import print_result

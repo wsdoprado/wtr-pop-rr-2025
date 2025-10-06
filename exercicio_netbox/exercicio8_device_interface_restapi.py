@@ -1,12 +1,3 @@
-"""
-Exercício 8 - Consulta de Devices e Interfaces via NetBox API
-----------------------------------------------------------------
-Este script demonstra como:
-1. Consultar dispositivos cadastrados no NetBox.
-2. Para cada dispositivo, obter a lista de interfaces.
-3. Exibir um resumo contendo informações do device e suas interfaces.
-"""
-
 import os
 import requests
 import urllib3

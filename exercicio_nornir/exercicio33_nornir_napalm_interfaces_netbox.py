@@ -1,8 +1,3 @@
-"""
-Exercício 27 - 
-
-"""
-
 import os
 from nornir import InitNornir
 from nornir_rich.functions import print_result

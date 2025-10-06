@@ -1,17 +1,3 @@
-"""
-Exercício 22 - Script Nornir: Executa comando em múltiplos dispositivos
----------------------------------------------------------
-
-Este script utiliza Nornir + Netmiko para conectar a múltiplos dispositivos
-definidos em hosts.yaml e executar um comando CLI.
-
-Funcionalidades:
-- Execução paralela via runner "threaded".
-- Uso do netmiko_send_command para comandos CLI.
-- Impressão formatada com nornir_rich.
-
-"""
-
 from nornir import InitNornir
 from nornir_rich.functions import print_result
 from nornir_netmiko.tasks import netmiko_send_command

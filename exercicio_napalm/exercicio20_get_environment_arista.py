@@ -1,11 +1,3 @@
-"""
-Exercício 20 - Consulta de Informações do Ambiente com NAPALM
----------------------------------------------------------------
-Este script demonstra como:
-1. Conectar a um dispositivo Arista EOS usando NAPALM.
-2. Obter informações ambientais como temperatura, voltagem e uso de recursos.
-"""
-
 from napalm import get_network_driver
 
 # Informações do dispositivo

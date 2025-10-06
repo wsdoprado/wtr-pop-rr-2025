@@ -1,14 +1,3 @@
-"""
-Exercício 12 - Coleta de Informações de Interface com Netmiko e TextFSM
------------------------------------------------------------------------
-Este script demonstra como:
-1. Carregar credenciais de um arquivo .env.
-2. Conectar a um dispositivo Arista EOS usando Netmiko.
-3. Executar o comando "show ip int brief" com parsing via TextFSM.
-4. Exibir o resultado estruturado.
-5. Tratar erros de conexão.
-"""
-
 from netmiko import ConnectHandler
 import os
 from dotenv import load_dotenv

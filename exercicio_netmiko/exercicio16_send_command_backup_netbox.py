@@ -1,14 +1,3 @@
-"""
-Exercício 13 - Backup Automático de Dispositivos do NetBox
------------------------------------------------------------
-Este script demonstra como:
-1. Consumir API do NetBox para listar dispositivos.
-2. Filtrar dispositivos com plataforma Arista EOS.
-3. Conectar via Netmiko.
-4. Obter a configuração em execução.
-5. Salvar a configuração em arquivo.
-"""
-
 from netmiko import ConnectHandler
 from dotenv import load_dotenv
 import requests

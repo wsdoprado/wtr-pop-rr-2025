@@ -1,8 +1,3 @@
-"""
-Exercício 24 - 
-
-"""
-
 from nornir import InitNornir
 from nornir_rich.functions import print_result
 from nornir_napalm.plugins.tasks import napalm_get

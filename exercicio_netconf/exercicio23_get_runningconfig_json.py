@@ -1,17 +1,3 @@
-"""
-Exercício 23 - Automação de Redes com Netconf
----------------------------------------------
-Este script demonstra como conectar a um dispositivo de rede usando ncclient,
-coletar a configuração em XML e convertê-la para JSON.
-
-Objetivos:
-1. Carregar credenciais de um arquivo .env.
-2. Conectar a um dispositivo de rede via NETCONF.
-3. Coletar a configuração em execução.
-4. Converter a saída XML para JSON.
-5. Tratar erros de conexão.
-"""
-
 from xml.dom import minidom
 from ncclient import manager
 from dotenv import load_dotenv

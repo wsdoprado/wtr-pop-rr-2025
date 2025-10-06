@@ -1,14 +1,3 @@
-"""
-Exercício 11 - Automação de Redes com Netmiko e TextFSM
--------------------------------------------------------
-Este script demonstra como:
-1. Carregar credenciais de um arquivo .env.
-2. Conectar a um dispositivo Arista EOS usando Netmiko.
-3. Executar um comando com parsing via TextFSM.
-4. Exibir o resultado formatado.
-5. Tratar erros de conexão.
-"""
-
 from netmiko import ConnectHandler
 import os
 from dotenv import load_dotenv

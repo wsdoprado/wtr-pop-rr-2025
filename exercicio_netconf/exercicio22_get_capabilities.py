@@ -1,16 +1,3 @@
-"""
-Exercício 21 - Automação de Redes com Netmiko
----------------------------------------------
-Este script demonstra como conectar a um dispositivo de rede usando Netmiko,
-executar um comando e exibir o resultado.
-
-Objetivos:
-1. Carregar credenciais de um arquivo .env.
-2. Conectar a um dispositivo de rede.
-3. Executar comandos.
-4. Tratar erros de conexão.
-"""
-
 from xml.dom import minidom
 from ncclient import manager
 
@@ -31,7 +18,6 @@ device = {
     "password": PASSW_DEVICE,
     "hostkey_verify": False,
 }
-
 
 try:
     print(f"Conectando ao dispositivo {device['host']}...")

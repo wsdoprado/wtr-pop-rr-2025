@@ -1,11 +1,3 @@
-"""
-Exercício 19 - Consulta de ARP Table com NAPALM
----------------------------------------------------
-Este script demonstra como:
-1. Conectar a um dispositivo Arista EOS usando NAPALM.
-2. Obter a tabela ARP.
-"""
-
 from napalm import get_network_driver
 
 # Informações do dispositivo

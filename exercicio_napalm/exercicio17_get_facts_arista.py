@@ -1,11 +1,3 @@
-"""
-Exercício 17 - Uso básico do NAPALM
--------------------------------------
-Este script demonstra como:
-1. Conectar em um dispositivo de rede usando NAPALM.
-2. Obter informações básicas do dispositivo.
-"""
-
 from napalm import get_network_driver
 
 # Informações do dispositivo

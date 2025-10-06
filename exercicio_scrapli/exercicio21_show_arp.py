@@ -1,11 +1,3 @@
-"""
-Exercício 21 - Consulta ARP Table usando Scrapli
----------------------------------------------------
-Este script demonstra como:
-1. Conectar a um dispositivo Arista EOS usando Scrapli.
-2. Coletar a tabela ARP.
-"""
-
 from scrapli.driver.core import EOSDriver
 
 # Informações do dispositivo

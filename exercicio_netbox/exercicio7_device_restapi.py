@@ -1,13 +1,3 @@
-"""
-Exercício 7 - Consulta de Dispositivos via NetBox REST API
-------------------------------------------------------------
-Este script demonstra como:
-1. Carregar credenciais do arquivo `.env.dev`.
-2. Consultar a API REST do NetBox para listar dispositivos.
-3. Aplicar filtros opcionais.
-4. Exibir informações relevantes dos dispositivos.
-"""
-
 import os
 import requests
 import urllib3

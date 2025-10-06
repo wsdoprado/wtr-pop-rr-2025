@@ -1,12 +1,3 @@
-"""
-Exercício 9 - Consulta de Devices via GraphQL NetBox
--------------------------------------------------------
-Este script demonstra como:
-1. Consultar devices no NetBox usando GraphQL.
-2. Recuperar detalhes de interfaces e IPs.
-3. Permitir filtro por ID de dispositivo.
-"""
-
 import os
 import requests
 import urllib3
